@@ -15,26 +15,26 @@ namespace Lab_Week_9_Passwords
         public frmLogin()
 
         {
-            InitializeComponent();
+            InitializeComponent(); //Initialize the Application and Vaiables
         }
 
-        private void btnLogin_Click(object sender, EventArgs e)
+        private void btnLogin_Click(object sender, EventArgs e) // Button Code
         {
             if (txtLogin.Text == "")
             {
-                MessageBox.Show("Please input a valid password");
+                MessageBox.Show("Please input a valid password"); // Text on no password
                 return;
             }
 
             else if (txtLogin.Text == "COMP1030")
             {
-                MessageBox.Show("Valid password please continue..");
+                MessageBox.Show("Valid password please continue.."); //Text on Valid Password
             }
 
             else if (txtLogin.Text != "COMP1030")
 
             {
-                MessageBox.Show("Invalid Password");
+                MessageBox.Show("Invalid Password"); //  Text on Invalid Password.
                 return;
             }
 
